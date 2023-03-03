@@ -118,7 +118,30 @@ $ python3 runtimes.py --max_x=22
 ```
 and copy/paste the resulting table into this README file below this line.
 
-<!-- add the table here -->
+|    x    |      timsort      |   merge_sorted    |   quick_sorted    |
+| ------- | ----------------- | ----------------- | ----------------- |
+|    1    | 4.031e-06 seconds | 2.887e-06 seconds | 2.995e-06 seconds |
+|    2    | 2.678e-06 seconds | 9.410e-06 seconds | 1.138e-05 seconds |
+|    4    | 2.615e-06 seconds | 1.613e-05 seconds | 1.696e-05 seconds |
+|    8    | 3.323e-06 seconds | 3.586e-05 seconds | 3.681e-05 seconds |
+|   16    | 4.657e-06 seconds | 7.894e-05 seconds | 6.540e-05 seconds |
+|   32    | 6.616e-06 seconds | 1.516e-04 seconds | 1.844e-04 seconds |
+|   64    | 1.596e-05 seconds | 3.812e-04 seconds | 4.542e-04 seconds |
+|   128   | 2.912e-05 seconds | 8.644e-04 seconds | 9.574e-04 seconds |
+|   256   | 6.270e-05 seconds | 1.865e-03 seconds | 2.367e-03 seconds |
+|   512   | 1.359e-04 seconds | 4.110e-03 seconds | 5.189e-03 seconds |
+|  1024   | 3.053e-04 seconds | 9.202e-03 seconds | 1.189e-02 seconds |
+|  2048   | 6.782e-04 seconds | 1.980e-02 seconds | 2.491e-02 seconds |
+|  4096   | 1.463e-03 seconds | 4.310e-02 seconds | 5.241e-02 seconds |
+|  8192   | 3.194e-03 seconds | 9.293e-02 seconds | 1.195e-01 seconds |
+|  16384  | 6.916e-03 seconds | 2.031e-01 seconds | 2.531e-01 seconds |
+|  32768  | 1.578e-02 seconds | 4.340e-01 seconds | 5.195e-01 seconds |
+|  65536  | 3.510e-02 seconds | 9.131e-01 seconds | 1.124e+00 seconds |
+| 131072  | 7.832e-02 seconds | 1.900e+00 seconds | 2.315e+00 seconds |
+| 262144  | 1.874e-01 seconds | 3.983e+00 seconds | 5.008e+00 seconds |
+| 524288  | 3.464e-01 seconds | 8.584e+00 seconds | 1.090e+01 seconds |
+| 1048576 | 9.553e-01 seconds | 1.818e+01 seconds | 2.349e+01 seconds |
+| 2097152 | 2.093e+00 seconds | 3.695e+01 seconds | 5.061e+01 seconds |
 
 You should observe that python's built-in sort function is 10-100x faster than yours.
 All functions have the same wort-case asymptotic complexity (i.e. $\Theta(n \log n)$),
